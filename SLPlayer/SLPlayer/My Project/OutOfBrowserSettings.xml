@@ -1,0 +1,15 @@
+<OutOfBrowserSettings ShortName="SLPlayer" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>SLPlayer zur Wiedergabe von Smoothstreaming</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="SLPlayer" Height="1080" Width="1920" Top="0" Left="0" WindowStartupLocation="Manual" WindowStyle="None" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.SecuritySettings>
+    <SecuritySettings ElevatedPermissions="Required" />
+  </OutOfBrowserSettings.SecuritySettings>
+  <OutOfBrowserSettings.Icons>
+    <Icon Size="16,16">Images/icon16.png</Icon>
+    <Icon Size="32,32">Images/icon32.png</Icon>
+    <Icon Size="48,48">Images/icon48.png</Icon>
+    <Icon Size="128,128">Images/icon128.png</Icon>
+  </OutOfBrowserSettings.Icons>
+</OutOfBrowserSettings>
