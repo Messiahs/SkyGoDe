@@ -956,22 +956,16 @@ Namespace SkyGoDe
                     Dim TaskBarHwnd As IntPtr = NativeMethods.FindWindow("Shell_traywnd", "")
                     If TaskBarHwnd <> IntPtr.Zero Then
                         NativeMethods.ShowWindow(TaskBarHwnd, NativeMethods.ShowWindowCommands.Hide)
-                        '   NativeMethods.ShowWindow(TaskBarHwnd, NativeMethods.ShowWindowCommands.Minimize)
                     End If
                 End If
 
-
                 GUIGraphicsContext.IsFullScreenVideo = True
-                ' GUIGraphicsContext.IsPlaying = True
-                '  GUIGraphicsContext.IsPlayingVideo = True
-
                 GUIGraphicsContext.BlankScreen = True
                 GUIGraphicsContext.CurrentState = GUIGraphicsContext.State.SUSPENDING
 
                 Dim currProcess As Process
                 currProcess = System.Diagnostics.Process.GetCurrentProcess
                 currProcess.PriorityClass = ProcessPriorityClass.BelowNormal
-
             Else
                 ' reset sleeping Mediaportal 
                 Dim currProcess As Process
@@ -1007,8 +1001,6 @@ Namespace SkyGoDe
 
                 GUIGraphicsContext.CurrentState = GUIGraphicsContext.State.RUNNING
                 GUIGraphicsContext.IsFullScreenVideo = False
-                ' GUIGraphicsContext.IsPlaying = False
-                '  GUIGraphicsContext.IsPlayingVideo = False
                 GUIGraphicsContext.BlankScreen = False
                 GUIGraphicsContext.ResetLastActivity()
             End If

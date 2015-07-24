@@ -373,7 +373,7 @@ Namespace SkyGoDe
                     menuPage.Url = category.Url
 
                     For Each channel As JSONChannelListClass.ChannelList In localChannelList.Values
-                        Dim x As String = channel.name
+                        ' Dim channelName As String = channel.name
 
                         If DataSet.ContainsKey(channel.id) Then
                             'search events 4 current channel
@@ -383,7 +383,7 @@ Namespace SkyGoDe
 
                             For Each channelEvent As JSONLiveEventListClass.LiveEventList In channelEvents
                                 Dim dtEventStart As DateTime = CDate(channelEvent.startDate & " " & channelEvent.startTime)
-                                Dim dtEventEnd As DateTime = CDate(channelEvent.endDate & " " & channelEvent.endTime) '09.03.2015
+                                Dim dtEventEnd As DateTime = CDate(channelEvent.endDate & " " & channelEvent.endTime)
                                 Dim resultStart As Integer = DateTime.Compare(dtEventStart, dtNow)
                                 Dim resultEnd As Integer = DateTime.Compare(dtEventEnd, dtNow)
                  
